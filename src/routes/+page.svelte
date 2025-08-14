@@ -1,5 +1,8 @@
 <script lang="ts">
+  import "../index.css";
+  import Hero from "$lib/hero/Hero.svelte";
   import Button from "../lib/button/Button.svelte";
+  import heroImage from "$lib/assets/anna2.jpeg";
 </script>
 
 <h1>Welcome to your library project</h1>
@@ -12,3 +15,11 @@
   documentation
 </p>
 <Button label="Test" variant="outlined" onClick={() => console.log("test")} />
+
+<Hero
+  title="Webdesign"
+  subtitle="Klar. Flexibel. Für Dich."
+  imageUrl={heroImage}
+  classBg="hero-bg"
+  cta={{ label: "Sag Hallo 👋🏼", href: "some-url" }}
+/>
