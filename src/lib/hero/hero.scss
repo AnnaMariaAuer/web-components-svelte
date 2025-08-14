@@ -2,7 +2,7 @@
   display: flex;
   height: 100vh;
   overflow: hidden;
-  clip-path: polygon(3% 100%, 40% 0, 100% 0, 100% 100%, 3% 100%);
+  clip-path: polygon(0% 100%, 40% 0, 100% 0, 100% 100%, 0% 100%);
   overflow: hidden;
   position: relative;
 
@@ -15,7 +15,7 @@
 
 .hero-text {
   z-index: 1;
-  padding: 2rem;
+  padding: 2rem 4rem;
   position: absolute;
   top: 50%;
   height: 30%;
@@ -24,6 +24,6 @@
   justify-content: space-evenly;
 
   @media (max-width: 450px) {
-    padding-top: 6rem;
+    padding: 20rem 2rem;
   }
 }
